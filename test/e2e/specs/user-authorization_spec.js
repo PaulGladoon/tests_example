@@ -61,27 +61,27 @@ describe('User authorization', () => {
 
             // talent details page
         await fillingIn.talentDetails(artist_data);
-        browser.executeScript(scrollIntoView, global_page.nextBtn());
+        await browser.executeScript(scrollIntoView, global_page.nextBtn());
         talentTagsOnDetailsPage = await webElements.getTextElements($$('.talent-tags-controller__preview span'));
         await global_page.nextBtn().click();
 
             // profile photos page
-        browser.wait(EC.invisibilityOf(global_page.modalLoader()), 10000);
+        await browser.wait(EC.invisibilityOf(global_page.modalLoader()), 10000);
         await fillingIn.profilePhotos(artist_data);
         await global_page.nextBtn().click();
 
             // edit videos page
-        browser.wait(EC.invisibilityOf(global_page.modalLoader()), 10000);
+        await browser.wait(EC.invisibilityOf(global_page.modalLoader()), 10000);
         await fillingIn.editVideos(artist_data);
         await global_page.nextBtn().click();
 
             // edit audio page
-        browser.wait(EC.invisibilityOf(global_page.modalLoader()), 10000);
+        await browser.wait(EC.invisibilityOf(global_page.modalLoader()), 10000);
         await fillingIn.editAudio(artist_data);
         await global_page.nextBtn().click();
 
             // edit pictures page
-        browser.wait(EC.invisibilityOf(global_page.modalLoader()), 10000);
+        await browser.wait(EC.invisibilityOf(global_page.modalLoader()), 10000);
         await fillingIn.editPictures(artist_data);
         await global_page.saveBtn().click();
 
