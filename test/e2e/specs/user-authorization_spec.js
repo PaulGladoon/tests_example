@@ -62,7 +62,7 @@ describe('User authorization', () => {
             // talent details page
         await fillingIn.talentDetails(artist_data);
         browser.executeScript(scrollIntoView, global_page.nextBtn());
-        talentTagsOnDetailsPage = webElements.getTextElements($$('.talent-tags-controller__preview span'));
+        talentTagsOnDetailsPage = await webElements.getTextElements($$('.talent-tags-controller__preview span'));
         await global_page.nextBtn().click();
 
             // profile photos page
