@@ -1,0 +1,28 @@
+{
+  "name": "bank",
+  "version": "1.0.0",
+  "description": "Bank API test",
+  "main": "index.js",
+  "scripts": {
+    "test-all-services": "mocha test/api/service --reporter mocha-simple-html-reporter --reporter-options output=full_report.html --exit",
+    "send-report": "node ./test/api/service-manager/emailSend_helper.js",
+    "test-swagger": "node ./test/swagger/index.js"
+  },
+  "dependencies": {
+    "chai": "4.1.2",
+    "chai-http": "^3.0.0",
+    "emailjs": "^1.0.12",
+    "log": "^1.4.0",
+    "mocha": "^4.1.0",
+    "mochawesome": "^3.0.1",
+    "moment": "^2.20.1",
+    "orientjs": "^2.2.7",
+    "protractor": "^5.2.2",
+    "swagger-parser": "^4.0.2"
+  },
+  "author": "Paul",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha-simple-html-reporter": "^1.1.0"
+  }
+}

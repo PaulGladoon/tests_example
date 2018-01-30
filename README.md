@@ -1,2 +1,2 @@
-# tests_example
-My tests example
+# example
+Auto-test example
