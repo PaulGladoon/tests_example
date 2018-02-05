@@ -26,5 +26,5 @@ If you need to send a full report:
 If you need to run swagger test:
 > npm run test-swagger
 
-> How to run e2e test:
-protractor conf.js
+How to run e2e test:
+> protractor conf.js
