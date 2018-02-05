@@ -1,6 +1,9 @@
 # Auto-test example
 This repository contains an example of auto-tests API and e2e. Any coincidence with real projects and organizations is random.
 
+# Used Technologies:
+ChaiJS; Chai-httpJS; EmailJS; LogJS; MochaJS; MochawesomeJS; MomentJS; OrientJS; ProtractorJS; Swagger-parserJS.
+  
 How to run Mocha API test:
 
 If you need to run all tests:
